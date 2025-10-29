@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">STUDENT LIST</h1>
+    <table style="width: 60%;  margin: 20px;border-collapse: collapse; border: 1px solid;">
+
+        <th style="border: 1px solid;">Name</th>
+        <th style="border: 1px solid;">Roll_No</th>
+        <th style="border: 1px solid;">Department</th>
+        <th style="border: 1px solid;">Email</th>
+        <th style="border: 1px solid;">Mark</th>
+        {% for stud in data %}
+
+        <tr style="border: 1px solid;">
+            <td style="border: 1px solid; text-align: center;">{{stud.name}}</td>
+            <td style="border: 1px solid; text-align: center;">{{stud.roll_no}}</td>
+            <td style="border: 1px solid; text-align: center;">{{stud.department}}</td>
+            <td style="border: 1px solid; text-align: center;">{{stud.email}}</td>
+            <td style="border: 1px solid; text-align: center;">{{stud.marks}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
